@@ -1,20 +1,51 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind-practise</title>
+    <link rel="stylesheet" href="/src/tailwind.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tailwind-practise</title>
-  <link rel="stylesheet" href="/src/style.css">
-</head>
+  <body>
+    <!-- 黑背景 -->
+    <div class="min-h-screen bg-gray-900 text-white">
+      <!-- 你的所有內容 -->
+      <div class="mx-auto h-[768px] w-[1024px] bg-amber-100">
+        <!-- 網站標題區（top） -->
+        <div class="h-[65px] w-full bg-red-200"></div>
 
-<body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
-  <h1 class="text-red-500">
-    Hello world!
-  </h1>
-</body>
+        <!-- 內容（main） -->
+        <div class="flex h-[calc(100%_-_85px)] w-full bg-amber-300">
+          <!-- 左邊欄 -->
+          <div class="h-full w-[215px] bg-amber-400">
+            <!-- 選單區 -->
+            <div class="h-[calc(100%_-_25px)] w-full bg-green-500"></div>
+            <!-- 日期更新區 -->
+            <div class="h-[25px] w-full bg-blue-600"></div>
+          </div>
 
+          <!-- 右邊欄 -->
+          <div class="h-full w-[calc(100%_-_215px)] bg-amber-500">
+            <!-- 跑馬燈 -->
+            <div class="h-[29px] w-full bg-pink-600"></div>
+
+            <!-- 網頁內容區 -->
+            <div class="h-[calc(100%_-_29px)] w-full bg-gray-600"></div>
+          </div>
+        </div>
+
+        <!-- 頁尾版權區（footer） -->
+        <div class="h-[20px] w-full bg-yellow-200"></div>
+      </div>
+    </div>
+    <!-- <div id="app"></div> -->
+    <!-- <script type="module" src="/src/main.js"></script> -->
+
+    <h1 class="text-red-500">Hello world!</h1>
+    <div class="flex p-4 text-red-500"></div>
+    <div class="flex p-4 text-red-500"></div>
+    <h1 class=""></h1>
+  </body>
 </html>
